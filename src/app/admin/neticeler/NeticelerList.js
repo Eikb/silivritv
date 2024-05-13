@@ -94,7 +94,7 @@ export function Neticelist({ neticeler, getAllNetices }) {
       <List>
         {neticeler.map((e) => {
           return (
-            <ListItem ripple={false} className="py-1 pr-1 pl-4">
+            <ListItem ripple={false} className="py-1 pr-1 pl-4" key={e}>
               <div onClick={() => router.push("/admin/neticeler/" + e.id)}>
                 {e.active ? (
                   <Typography className=" text-green-600 font-bold">

@@ -189,9 +189,10 @@ const Page = ({ params }) => {
         <div>
           {grades.map((a, k) => {
             return (
-              <div className=" grid grid-cols-9">
-                <Typography>{a[0].split(".")[2]}</Typography>
+              <div key={a} className=" grid grid-cols-9">
+                <Typography key={k}>{a[0].split(".")[2]}</Typography>
                 <Input
+                key={k}
                   id={a[0]}
                   defaultValue={a[1]}
                   onBlur={(e) =>
