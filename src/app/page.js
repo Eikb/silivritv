@@ -152,9 +152,10 @@ export default function Home() {
         {dto.map((e) => {
           return (
             <Dershane
+            key={1}
               name={e.groupName}
               TABLE_ROWS={e.results}
-              color=" bg-red"
+              color="bg-red"
             />
           );
         })}
